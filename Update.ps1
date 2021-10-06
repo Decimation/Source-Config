@@ -1,10 +1,12 @@
-$TF2_Dir = "I:\Steam\steamapps\common\Team Fortress 2\tf\cfg"
+$TF2_Dir = 'I:\Steam\steamapps\common\Team Fortress 2\tf\cfg'
 
 $cd = Get-Location
 
 Copy-Item -Path "$TF2_Dir\autoexec.cfg" -Destination $cd
 
 Copy-Item -Path "$TF2_Dir\deci" -Destination $cd -Recurse -Force
+Copy-Item -Path "$TF2_Dir\comfig" -Destination $cd -Recurse -Force
+Copy-Item -Path "$TF2_Dir\presets" -Destination $cd -Recurse -Force
 
 Copy-Item -Path "$TF2_Dir\common.cfg" -Destination $cd
 Copy-Item -Path "$TF2_Dir\scout.cfg" -Destination $cd
