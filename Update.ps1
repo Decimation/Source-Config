@@ -1,23 +1,31 @@
-$TF2_Dir = 'I:\Steam\steamapps\common\Team Fortress 2\tf\cfg'
-
 $cd = Get-Location
 
-Copy-Item -Path "$TF2_Dir\autoexec.cfg" -Destination $cd
 
-Copy-Item -Path "$TF2_Dir\deci" -Destination $cd -Recurse -Force
-Copy-Item -Path "$TF2_Dir\comfig" -Destination $cd -Recurse -Force
-Copy-Item -Path "$TF2_Dir\presets" -Destination $cd -Recurse -Force
+$TF2Dir = 'I:\Steam\steamapps\common\Team Fortress 2\tf\cfg'
 
-Copy-Item -Path "$TF2_Dir\common.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\scout.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\demoman.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\medic.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\sniper.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\heavyweapons.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\spy.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\engineer.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\pyro.cfg" -Destination $cd
-Copy-Item -Path "$TF2_Dir\soldier.cfg" -Destination $cd
+xcopy "$TF2Dir\autoexec.cfg" "$cd\TF2\" /y
+
+xcopy "$TF2Dir\deci" "$cd\TF2\deci" /y
+xcopy "$TF2Dir\comfig" "$cd\TF2\comfig" /y
+xcopy "$TF2Dir\presets" "$cd\TF2\presets" /y
+
+xcopy "$TF2Dir\common.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\scout.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\demoman.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\medic.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\sniper.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\heavyweapons.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\spy.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\engineer.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\pyro.cfg" "$cd\TF2\" /y
+xcopy "$TF2Dir\soldier.cfg" "$cd\TF2\" /y
 
 
+$PortalDir = 'J:\Program Files (x86)\Steam\steamapps\common\Portal\portal\cfg'
+xcopy "$PortalDir\autoexec.cfg" "$cd\Portal\" /y
 
+$Portal2Dir = 'J:\Program Files (x86)\Steam\steamapps\common\Portal 2\portal2\cfg'
+xcopy "$Portal2Dir\autoexec.cfg" "$cd\Portal 2\" /y
+
+$L4D2Dir = 'J:\Program Files (x86)\Steam\steamapps\common\Left 4 Dead 2\left4dead2\cfg'
+xcopy "$L4D2Dir\autoexec.cfg" "$cd\Left 4 Dead 2\" /y
