@@ -3,22 +3,22 @@ $cd = Get-Location
 
 $TF2Dir = 'I:\Steam\steamapps\common\Team Fortress 2\tf\cfg'
 
-xcopy "$TF2Dir\autoexec.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\autoexec.cfg" "$cd\TF2\" /y
 
-xcopy "$TF2Dir\deci" "$cd\TF2\deci" /y
-xcopy "$TF2Dir\comfig" "$cd\TF2\comfig" /y
-xcopy "$TF2Dir\presets" "$cd\TF2\presets" /y
+xcopy "$TF2Dir\deci\" "$cd\TF2\deci\" /y
+# xcopy "$TF2Dir\comfig" "$cd\TF2\comfig" /y
+xcopy "$TF2Dir\overrides\" "$cd\TF2\overrides\" /y
 
-xcopy "$TF2Dir\common.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\scout.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\demoman.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\medic.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\sniper.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\heavyweapons.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\spy.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\engineer.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\pyro.cfg" "$cd\TF2\" /y
-xcopy "$TF2Dir\soldier.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\common.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\scout.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\demoman.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\medic.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\sniper.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\heavyweapons.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\spy.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\engineer.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\pyro.cfg" "$cd\TF2\" /y
+# xcopy "$TF2Dir\soldier.cfg" "$cd\TF2\" /y
 
 
 $PortalDir = 'J:\Program Files (x86)\Steam\steamapps\common\Portal\portal\cfg'
