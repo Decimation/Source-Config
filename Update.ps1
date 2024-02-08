@@ -31,3 +31,6 @@ $L4D2Dir = 'J:\Program Files (x86)\Steam\steamapps\common\Left 4 Dead 2\left4dea
 xcopy "$L4D2Dir\autoexec.cfg" "$cd\Left 4 Dead 2\" /y
 
 xcopy "J:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\autoexec.cfg" "$cd\Half-Life\" /y
+xcopy "J:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\userconfig.cfg" "$cd\Half-Life\" /y
+xcopy "J:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\game.cfg" "$cd\Half-Life\" /y
+xcopy "J:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\listenserver.cfg" "$cd\Half-Life\" /y
